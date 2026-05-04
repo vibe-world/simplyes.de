@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SIMPLYES - Services</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error": "#ffffff",
+          "surface-container-high": "#e6e9e8",
+          "outline": "#737a67",
+          "tertiary": "#9b3684",
+          "inverse-on-surface": "#eff1f0",
+          "primary-container": "#8bc34a",
+          "on-primary-fixed-variant": "#2e4f00",
+          "surface-bright": "#f8faf9",
+          "primary": "#3e6a00",
+          "on-secondary-fixed": "#00201c",
+          "tertiary-fixed": "#ffd7ee",
+          "on-tertiary-fixed": "#3a0030",
+          "surface-container-highest": "#e1e3e2",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#85f6e5",
+          "on-surface": "#191c1c",
+          "surface-dim": "#d8dada",
+          "on-error-container": "#93000a",
+          "background": "#f8faf9",
+          "on-background": "#191c1c",
+          "inverse-surface": "#2e3131",
+          "surface-variant": "#e1e3e2",
+          "error-container": "#ffdad6",
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#f2f4f3",
+          "tertiary-container": "#ff8bde",
+          "on-surface-variant": "#424939",
+          "primary-fixed-dim": "#9ed75b",
+          "surface-container": "#eceeed",
+          "primary-fixed": "#b9f474",
+          "secondary-fixed": "#85f6e5",
+          "on-primary-container": "#2d4e00",
+          "outline-variant": "#c2c9b4",
+          "on-primary-fixed": "#0f2000",
+          "on-tertiary-fixed-variant": "#7e1b6a",
+          "secondary": "#006a60",
+          "on-primary": "#ffffff",
+          "on-secondary-fixed-variant": "#005048",
+          "on-secondary-container": "#007166",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed-dim": "#67d9c9",
+          "on-tertiary-container": "#7c1968",
+          "inverse-primary": "#9ed75b",
+          "surface": "#f8faf9",
+          "tertiary-fixed-dim": "#ffade4",
+          "surface-tint": "#3e6a00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {},
+        "fontFamily": {
+          "headline": ["Manrope"],
+          "body": ["Inter"],
+          "label": ["Inter"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  body { min-height: max(884px, 100dvh); }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen pb-24 selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<div id="site-header"></div>
+
+<!-- Hero Section -->
+<section class="px-6 pt-12 pb-8 max-w-7xl mx-auto relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
+  <div class="absolute top-20 left-10 w-48 h-48 bg-secondary-container/20 rounded-full blur-[60px] -z-10 pointer-events-none"></div>
+  <h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 leading-tight">Our <br/><span class="text-secondary">Services.</span></h2>
+  <p class="font-body text-lg text-on-surface-variant max-w-md mt-2">Tailored administrative and logistical solutions, executed with precision.</p>
+</section>
+
+<!-- Services Canvas -->
+<main class="px-4 md:px-8 max-w-7xl mx-auto flex flex-col gap-6 md:grid md:grid-cols-2 relative z-10">
+  <!-- Card: Courier -->
+  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
+    <div class="absolute -right-12 -top-12 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
+    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
+      <span class="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
+    </div>
+    <div class="flex-grow">
+      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Courier</h3>
+      <p class="font-body text-on-surface-variant leading-relaxed">Secure, fast, and reliable delivery of your sensitive documents and packages, handled with utmost priority.</p>
+    </div>
+    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
+      Request
+      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+    </a>
+  </article>
+  <!-- Card: Passport -->
+  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
+    <div class="absolute -right-12 -top-12 w-40 h-40 bg-primary-fixed/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
+    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
+      <span class="material-symbols-outlined text-primary text-3xl">badge</span>
+    </div>
+    <div class="flex-grow">
+      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Passport</h3>
+      <p class="font-body text-on-surface-variant leading-relaxed">Expedited processing and renewal services to ensure your global mobility is never interrupted.</p>
+    </div>
+    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
+      Request
+      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+    </a>
+  </article>
+  <!-- Card: Admin -->
+  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
+    <div class="absolute -right-12 -top-12 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
+    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
+      <span class="material-symbols-outlined text-secondary text-3xl">description</span>
+    </div>
+    <div class="flex-grow">
+      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Admin</h3>
+      <p class="font-body text-on-surface-variant leading-relaxed">Comprehensive administrative support, from document preparation to bureaucratic navigation.</p>
+    </div>
+    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
+      Request
+      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+    </a>
+  </article>
+  <!-- Card: Dedicated Assistance -->
+  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
+    <div class="absolute -right-12 -top-12 w-40 h-40 bg-primary-fixed/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
+    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
+      <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+    </div>
+    <div class="flex-grow">
+      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Dedicated Assistance</h3>
+      <p class="font-body text-on-surface-variant leading-relaxed">Bespoke concierge services offering personalized support for your complex, day-to-day requirements.</p>
+    </div>
+    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
+      Request
+      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+    </a>
+  </article>
+</main>
+
+<div id="site-nav"></div>
+<script src="components.js"></script>
+</body>
+</html>
