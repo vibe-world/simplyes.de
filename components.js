@@ -1,7 +1,7 @@
 (function () {
   // Inject pb-safe utility (used in nav, undefined on home/services pages)
   var style = document.createElement('style');
-  style.textContent = '.pb-safe { padding-bottom: env(safe-area-inset-bottom); }';
+  style.textContent = '.pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }';
   document.head.appendChild(style);
 
   // Active page detection — handles /index.html, /, /services.html, /contact.html
