@@ -1,140 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIMPLYES | Professional Concierge & Coordination Services</title>
-  <meta name="description" content="Premium professional coordination services in Germany. Courier, passport expediting, document notarization, and dedicated concierge assistance.">
-  <link rel="canonical" href="https://simplyes.de/index.html">
-  
-  <!-- Security -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; frame-src 'self' https://maps.googleapis.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://wa.me;">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>SIMPLYES - Locate Your Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error": "#ffffff",
+          "surface-container-high": "#e6e9e8",
+          "outline": "#737a67",
+          "tertiary": "#9b3684",
+          "inverse-on-surface": "#eff1f0",
+          "primary-container": "#8bc34a",
+          "on-primary-fixed-variant": "#2e4f00",
+          "surface-bright": "#f8faf9",
+          "primary": "#3e6a00",
+          "on-secondary-fixed": "#00201c",
+          "tertiary-fixed": "#ffd7ee",
+          "on-tertiary-fixed": "#3a0030",
+          "surface-container-highest": "#e1e3e2",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#85f6e5",
+          "on-surface": "#191c1c",
+          "surface-dim": "#d8dada",
+          "on-error-container": "#93000a",
+          "background": "#f8faf9",
+          "on-background": "#191c1c",
+          "inverse-surface": "#2e3131",
+          "surface-variant": "#e1e3e2",
+          "error-container": "#ffdad6",
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#f2f4f3",
+          "tertiary-container": "#ff8bde",
+          "on-surface-variant": "#424939",
+          "primary-fixed-dim": "#9ed75b",
+          "surface-container": "#eceeed",
+          "primary-fixed": "#b9f474",
+          "secondary-fixed": "#85f6e5",
+          "on-primary-container": "#2d4e00",
+          "outline-variant": "#c2c9b4",
+          "on-primary-fixed": "#0f2000",
+          "on-tertiary-fixed-variant": "#7e1b6a",
+          "secondary": "#006a60",
+          "on-primary": "#ffffff",
+          "on-secondary-fixed-variant": "#005048",
+          "on-secondary-container": "#007166",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed-dim": "#67d9c9",
+          "on-tertiary-container": "#7c1968",
+          "inverse-primary": "#9ed75b",
+          "surface": "#f8faf9",
+          "tertiary-fixed-dim": "#ffade4",
+          "surface-tint": "#3e6a00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {},
+        "fontFamily": {
+          "headline": ["Manrope"],
+          "body": ["Inter"],
+          "label": ["Inter"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  /* View Transitions API for modern smooth routing */
+  @view-transition { navigation: auto; }
+  /* Fallback fade-in for older browsers */
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  body {
+    min-height: max(884px, 100dvh);
+    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+</style>
 </head>
-<body>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">SIMPLYES</a>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="clients.html" class="nav-link">Clients</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="https://wa.me/4917662510556" class="cta-button" target="_blank" rel="noopener noreferrer">
-          <span class="material-icons">chat</span> Request via WhatsApp
+<div id="site-header"></div>
+
+<main class="pb-24">
+  <!-- Hero Section -->
+  <section class="relative px-6 pt-8 pb-12 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+      <div class="w-full md:w-1/2 flex flex-col items-start text-left z-10">
+        <div class="bg-primary_fixed/20 backdrop-blur-md px-4 py-1.5 rounded-full mb-6 border border-primary/10 inline-flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span class="text-xs font-label font-medium text-on-primary-container tracking-wider uppercase">Now Available Nationwide</span>
+        </div>
+        <h1 class="font-headline font-extrabold text-[3.5rem] leading-[1.1] tracking-[-0.02em] text-on-surface mb-6">
+          Locate Your <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Assistant</span> Nearby
+        </h1>
+        <p class="font-body text-lg text-on-surface-variant mb-8 max-w-md leading-relaxed">
+          Simply fast. Simply yes. Professional coordination delivered precisely when and where you need it most.
+        </p>
+        <a href="https://wa.me/4917662510556?text=I%20need%20assistance" target="_blank" class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-label font-medium text-base px-8 py-4 rounded-full shadow-[0px_12px_32px_rgba(25,28,28,0.08)] hover:shadow-[0px_16px_40px_rgba(62,106,0,0.15)] transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3">
+          Find Assistance
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
         </a>
       </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-        <span class="material-icons">menu</span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg-anim"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">Locate Your Assistant Nearby</h1>
-      <p class="hero-subtitle">Simply fast. Simply yes.</p>
-      <a href="https://wa.me/4917662510556" class="cta-button" style="padding: 16px 32px; font-size: 1.1rem;" target="_blank" rel="noopener noreferrer">
-        <span class="material-icons">chat</span> Request via WhatsApp
-      </a>
-      
-      <div class="trust-bar">
-        <div class="trust-item">
-          <span class="material-icons">verified_user</span> Verified Professionals
-        </div>
-        <div class="trust-item">
-          <span class="material-icons">timer</span> Ready in under 15 minutes
-        </div>
-        <div class="trust-item">
-          <span class="material-icons">public</span> Nationwide Coverage
+      <div class="w-full md:w-1/2 relative h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden bg-surface-container-low isolate">
+        <div class="absolute -inset-4 bg-tertiary-container/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
+        <img alt="Modern office space" fetchpriority="high" loading="eager" class="absolute inset-0 w-full h-full object-cover z-10 mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAht5t_NIaWyzsXDJ5SClK-ih09lR2DUeMtJJTTkaR18Ujy98nSaogrelSDvtPFgoKB0unzTVfrT8MhEG67cTlACOg3Oz9VcUojA-L3NvrSwAbSXLz2wXyb0GGycbAoSjhb7A_BF5EL5EFlpQdUBbSi8n2W7K7jq2ni7kHVhwuwaSKWOJkG8blMraRten1Kyz05zo7hzUwMsWsIitIKAlZZOtKo6l_tJ-8F2I4xlu64-ES76aSKyx2L3g58CNSl6NwNJmRkKNI2FYQ"/>
+        <!-- Glassmorphism Floating Card -->
+        <div class="absolute bottom-6 left-6 right-6 md:left-auto md:right-8 md:bottom-8 bg-surface/70 backdrop-blur-[20px] p-5 rounded-xl border border-outline-variant/15 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] z-20 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <p class="font-headline font-bold text-on-surface text-sm">Verified Professionals</p>
+            <p class="font-body text-xs text-on-surface-variant">Ready in under 15 minutes</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Preview Section -->
-  <section class="services-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Our Premium Services</h2>
-        <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">Dedicated support across Germany tailored to professionals who require efficiency, security, and absolute reliability.</p>
+  <!-- Core Operations Bento Grid -->
+  <section class="px-6 py-16 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h2 class="font-headline font-bold text-3xl text-on-surface tracking-tight">Core Operations</h2>
+          <p class="font-body text-on-surface-variant mt-2">Precision execution for critical tasks.</p>
+        </div>
+        <a href="services.html" class="text-primary font-label font-medium text-sm tracking-widest flex items-center gap-2 hover:opacity-80 transition-opacity">
+          VIEW ALL SERVICES
+          <span class="material-symbols-outlined text-xs">arrow_forward</span>
+        </a>
       </div>
-      
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card">
-          <span class="material-icons service-icon">local_shipping</span>
-          <h3 class="service-title">Courier Protocol</h3>
-          <p class="service-desc">Secure, rapid transport of highly sensitive documents and high-value parcels with end-to-end chain of custody.</p>
-          <a href="services.html" class="service-link">Learn More <span class="material-icons" style="font-size: 1rem;">arrow_forward</span></a>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="group bg-surface-container-lowest p-8 rounded-2xl flex flex-col gap-6 hover:shadow-[0px_12px_32px_rgba(25,28,28,0.04)] transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary-container/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Courier Protocol</h3>
+            <p class="font-body text-on-surface-variant text-sm leading-relaxed">Secure, rapid transit for sensitive parcels and time-critical deliveries across the network.</p>
+          </div>
         </div>
-        <!-- Service 2 -->
-        <div class="service-card">
-          <span class="material-icons service-icon">flight_takeoff</span>
-          <h3 class="service-title">Passport Expediting</h3>
-          <p class="service-desc">Fast-tracked processing for travel documents, visas, and essential governmental paperwork.</p>
-          <a href="services.html" class="service-link">Learn More <span class="material-icons" style="font-size: 1rem;">arrow_forward</span></a>
+        <!-- Card 2 -->
+        <div class="group bg-surface-container-lowest p-8 rounded-2xl flex flex-col gap-6 hover:shadow-[0px_12px_32px_rgba(25,28,28,0.04)] transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-secondary-container/30 transition-colors">
+            <span class="material-symbols-outlined text-2xl text-secondary" style="font-variation-settings: 'FILL' 0;">flight_takeoff</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Passport Expediting</h3>
+            <p class="font-body text-on-surface-variant text-sm leading-relaxed">Fast-tracked documentation handling to ensure uninterrupted global mobility and compliance.</p>
+          </div>
         </div>
-        <!-- Service 3 -->
-        <div class="service-card">
-          <span class="material-icons service-icon">gavel</span>
-          <h3 class="service-title">Document Execution</h3>
-          <p class="service-desc">Coordination of legal notarizations, apostilles, and certified translations handled with precision.</p>
-          <a href="services.html" class="service-link">Learn More <span class="material-icons" style="font-size: 1rem;">arrow_forward</span></a>
+        <!-- Card 3 -->
+        <div class="group bg-surface-container-lowest p-8 rounded-2xl flex flex-col gap-6 hover:shadow-[0px_12px_32px_rgba(25,28,28,0.04)] transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-secondary-container/30 transition-colors">
+            <span class="material-symbols-outlined text-2xl text-secondary" style="font-variation-settings: 'FILL' 0;">edit_document</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Document Execution</h3>
+            <p class="font-body text-on-surface-variant text-sm leading-relaxed">Certified witnessing, notarization coordination, and secure filing of essential legal paperwork.</p>
+          </div>
         </div>
-        <!-- Service 4 -->
-        <div class="service-card">
-          <span class="material-icons service-icon">support_agent</span>
-          <h3 class="service-title">Dedicated Overwatch</h3>
-          <p class="service-desc">Personalized concierge assistance acting as your discreet extension in the field.</p>
-          <a href="services.html" class="service-link">Learn More <span class="material-icons" style="font-size: 1rem;">arrow_forward</span></a>
+        <!-- Card 4 -->
+        <div class="group bg-surface-container-lowest p-8 rounded-2xl flex flex-col gap-6 hover:shadow-[0px_12px_32px_rgba(25,28,28,0.04)] transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary-container/20 transition-colors">
+            <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 0;">security</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Dedicated Overwatch</h3>
+            <p class="font-body text-on-surface-variant text-sm leading-relaxed">Continuous monitoring and personalized assistance for high-stakes, multi-step operations.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+</main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">SIMPLYES</div>
-        <div class="footer-links">
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="services.html" class="footer-link">Services</a>
-          <a href="clients.html" class="footer-link">Clients</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </div>
-        <p style="color: var(--text-gray); font-size: 0.9rem;">
-          Berliner Straße 2, Eschborn, Hessen, 65760, Germany<br>
-          <a href="tel:+4917662510556" style="color: var(--accent-gold); text-decoration: none;">+49 17662510556</a>
-        </p>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2025 SIMPLYES. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('active');
-    });
-  </script>
+<div id="site-nav"></div>
+<script src="components.js"></script>
 </body>
 </html>
