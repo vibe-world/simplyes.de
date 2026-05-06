@@ -1,173 +1,165 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-<title>SIMPLYES - Services</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link rel="preconnect" href="https://cdn.tailwindcss.com">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-          "on-error": "#ffffff",
-          "surface-container-high": "#e6e9e8",
-          "outline": "#737a67",
-          "tertiary": "#9b3684",
-          "inverse-on-surface": "#eff1f0",
-          "primary-container": "#8bc34a",
-          "on-primary-fixed-variant": "#2e4f00",
-          "surface-bright": "#f8faf9",
-          "primary": "#3e6a00",
-          "on-secondary-fixed": "#00201c",
-          "tertiary-fixed": "#ffd7ee",
-          "on-tertiary-fixed": "#3a0030",
-          "surface-container-highest": "#e1e3e2",
-          "error": "#ba1a1a",
-          "surface-container-lowest": "#ffffff",
-          "secondary-container": "#85f6e5",
-          "on-surface": "#191c1c",
-          "surface-dim": "#d8dada",
-          "on-error-container": "#93000a",
-          "background": "#f8faf9",
-          "on-background": "#191c1c",
-          "inverse-surface": "#2e3131",
-          "surface-variant": "#e1e3e2",
-          "error-container": "#ffdad6",
-          "on-secondary": "#ffffff",
-          "surface-container-low": "#f2f4f3",
-          "tertiary-container": "#ff8bde",
-          "on-surface-variant": "#424939",
-          "primary-fixed-dim": "#9ed75b",
-          "surface-container": "#eceeed",
-          "primary-fixed": "#b9f474",
-          "secondary-fixed": "#85f6e5",
-          "on-primary-container": "#2d4e00",
-          "outline-variant": "#c2c9b4",
-          "on-primary-fixed": "#0f2000",
-          "on-tertiary-fixed-variant": "#7e1b6a",
-          "secondary": "#006a60",
-          "on-primary": "#ffffff",
-          "on-secondary-fixed-variant": "#005048",
-          "on-secondary-container": "#007166",
-          "on-tertiary": "#ffffff",
-          "secondary-fixed-dim": "#67d9c9",
-          "on-tertiary-container": "#7c1968",
-          "inverse-primary": "#9ed75b",
-          "surface": "#f8faf9",
-          "tertiary-fixed-dim": "#ffade4",
-          "surface-tint": "#3e6a00"
-        },
-        "borderRadius": {
-          "DEFAULT": "0.125rem",
-          "lg": "0.25rem",
-          "xl": "0.5rem",
-          "full": "0.75rem"
-        },
-        "spacing": {},
-        "fontFamily": {
-          "headline": ["Manrope"],
-          "body": ["Inter"],
-          "label": ["Inter"]
-        }
-      },
-    },
-  }
-</script>
-<style>
-  /* View Transitions API for modern smooth routing */
-  @view-transition { navigation: auto; }
-  /* Fallback fade-in for older browsers */
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-  body { 
-    min-height: max(884px, 100dvh); 
-    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | SIMPLYES</title>
+  <meta name="description" content="Explore our premium services: Courier Protocol, Passport Expediting, Document Execution, and Dedicated Overwatch Concierge.">
+  <link rel="canonical" href="https://simplyes.de/services.html">
+  
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; frame-src 'self' https://maps.googleapis.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://wa.me;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-surface text-on-surface font-body antialiased min-h-screen pb-24 selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<body>
 
-<div id="site-header"></div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">SIMPLYES</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="https://wa.me/4917662510556" class="cta-button" target="_blank" rel="noopener noreferrer">
+          <span class="material-icons">chat</span> Request via WhatsApp
+        </a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </nav>
 
-<!-- Hero Section -->
-<section class="px-6 pt-12 pb-8 max-w-7xl mx-auto relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
-  <div class="absolute top-20 left-10 w-48 h-48 bg-secondary-container/20 rounded-full blur-[60px] -z-10 pointer-events-none"></div>
-  <h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 leading-tight">Our <br/><span class="text-secondary">Services.</span></h2>
-  <p class="font-body text-lg text-on-surface-variant max-w-md mt-2">Tailored administrative and logistical solutions, executed with precision.</p>
-</section>
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Our Premium Services</h1>
+      <p class="page-subtitle">Excellence and absolute reliability, available nationwide across Germany.</p>
+    </div>
+  </header>
 
-<!-- Services Canvas -->
-<main class="px-4 md:px-8 max-w-7xl mx-auto flex flex-col gap-6 md:grid md:grid-cols-2 relative z-10">
-  <!-- Card: Courier -->
-  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
-    <div class="absolute -right-12 -top-12 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
-    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
-      <span class="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
-    </div>
-    <div class="flex-grow">
-      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Courier</h3>
-      <p class="font-body text-on-surface-variant leading-relaxed">Secure, fast, and reliable delivery of your sensitive documents and packages, handled with utmost priority.</p>
-    </div>
-    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
-      Request
-      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-    </a>
-  </article>
-  <!-- Card: Passport -->
-  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
-    <div class="absolute -right-12 -top-12 w-40 h-40 bg-primary-fixed/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
-    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
-      <span class="material-symbols-outlined text-primary text-3xl">badge</span>
-    </div>
-    <div class="flex-grow">
-      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Passport</h3>
-      <p class="font-body text-on-surface-variant leading-relaxed">Expedited processing and renewal services to ensure your global mobility is never interrupted.</p>
-    </div>
-    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
-      Request
-      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-    </a>
-  </article>
-  <!-- Card: Admin -->
-  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
-    <div class="absolute -right-12 -top-12 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
-    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
-      <span class="material-symbols-outlined text-secondary text-3xl">description</span>
-    </div>
-    <div class="flex-grow">
-      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Admin</h3>
-      <p class="font-body text-on-surface-variant leading-relaxed">Comprehensive administrative support, from document preparation to bureaucratic navigation.</p>
-    </div>
-    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
-      Request
-      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-    </a>
-  </article>
-  <!-- Card: Dedicated Assistance -->
-  <article class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0px_12px_32px_rgba(25,28,28,0.04)] flex flex-col gap-5 relative overflow-hidden group">
-    <div class="absolute -right-12 -top-12 w-40 h-40 bg-primary-fixed/30 rounded-full blur-3xl transition-colors duration-700 pointer-events-none"></div>
-    <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mb-2">
-      <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
-    </div>
-    <div class="flex-grow">
-      <h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight mb-2">Dedicated Assistance</h3>
-      <p class="font-body text-on-surface-variant leading-relaxed">Bespoke concierge services offering personalized support for your complex, day-to-day requirements.</p>
-    </div>
-    <a href="https://wa.me/1234567890?text=I%20would%20like%20to%20request%20a%20service" target="_blank" class="mt-4 w-full md:w-max bg-[linear-gradient(135deg,#3e6a00_0%,#8bc34a_100%)] text-on-primary rounded-full py-4 px-8 font-label font-semibold tracking-wide flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
-      Request
-      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-    </a>
-  </article>
-</main>
+  <!-- Detailed Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-grid" style="grid-template-columns: 1fr; gap: 48px;">
+        
+        <!-- Service 1 -->
+        <div class="service-card" style="flex-direction: row; align-items: center; gap: 48px; padding: 48px;">
+          <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 120px; height: 120px; background: rgba(201, 168, 76, 0.1); border-radius: 50%;">
+            <span class="material-icons" style="font-size: 4rem; color: var(--accent-gold);">local_shipping</span>
+          </div>
+          <div style="flex-grow: 1;">
+            <h2 class="service-title" style="font-size: 2rem; font-family: 'Playfair Display', serif;">Courier Protocol</h2>
+            <p class="service-desc" style="font-size: 1.05rem;">We provide secure, rapid transport of highly sensitive documents, classified information, and high-value parcels. Our protocol ensures a fully documented end-to-end chain of custody, ensuring your items are delivered with absolute discretion and speed.</p>
+            <a href="https://wa.me/4917662510556?text=I%20would%20like%20to%20request%20the%20Courier%20Protocol%20service." class="cta-button outline" target="_blank" rel="noopener noreferrer">
+              <span class="material-icons">chat</span> Request Courier Protocol
+            </a>
+          </div>
+        </div>
 
-<div id="site-nav"></div>
-<script src="components.js"></script>
+        <!-- Service 2 -->
+        <div class="service-card" style="flex-direction: row; align-items: center; gap: 48px; padding: 48px;">
+          <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 120px; height: 120px; background: rgba(201, 168, 76, 0.1); border-radius: 50%;">
+            <span class="material-icons" style="font-size: 4rem; color: var(--accent-gold);">flight_takeoff</span>
+          </div>
+          <div style="flex-grow: 1;">
+            <h2 class="service-title" style="font-size: 2rem; font-family: 'Playfair Display', serif;">Passport Expediting</h2>
+            <p class="service-desc" style="font-size: 1.05rem;">Time is of the essence when it comes to international travel. We offer fast-tracked processing for travel documents, urgent visas, and essential governmental paperwork, minimizing delays and bureaucratic friction.</p>
+            <a href="https://wa.me/4917662510556?text=I%20would%20like%20to%20request%20the%20Passport%20Expediting%20service." class="cta-button outline" target="_blank" rel="noopener noreferrer">
+              <span class="material-icons">chat</span> Request Passport Expediting
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card" style="flex-direction: row; align-items: center; gap: 48px; padding: 48px;">
+          <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 120px; height: 120px; background: rgba(201, 168, 76, 0.1); border-radius: 50%;">
+            <span class="material-icons" style="font-size: 4rem; color: var(--accent-gold);">gavel</span>
+          </div>
+          <div style="flex-grow: 1;">
+            <h2 class="service-title" style="font-size: 2rem; font-family: 'Playfair Display', serif;">Document Execution</h2>
+            <p class="service-desc" style="font-size: 1.05rem;">Ensure your legal and corporate paperwork is handled flawlessly. We coordinate legal notarizations, international apostilles, and certified translations, managing the entire execution process with strict precision.</p>
+            <a href="https://wa.me/4917662510556?text=I%20would%20like%20to%20request%20the%20Document%20Execution%20service." class="cta-button outline" target="_blank" rel="noopener noreferrer">
+              <span class="material-icons">chat</span> Request Document Execution
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card" style="flex-direction: row; align-items: center; gap: 48px; padding: 48px;">
+          <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 120px; height: 120px; background: rgba(201, 168, 76, 0.1); border-radius: 50%;">
+            <span class="material-icons" style="font-size: 4rem; color: var(--accent-gold);">support_agent</span>
+          </div>
+          <div style="flex-grow: 1;">
+            <h2 class="service-title" style="font-size: 2rem; font-family: 'Playfair Display', serif;">Dedicated Overwatch</h2>
+            <p class="service-desc" style="font-size: 1.05rem;">Our Dedicated Overwatch functions as your personal, discreet extension in the field. From handling complex on-ground logistics to exclusive concierge assistance, we guarantee your priorities are executed to the highest standard.</p>
+            <a href="https://wa.me/4917662510556?text=I%20would%20like%20to%20request%20the%20Dedicated%20Overwatch%20service." class="cta-button outline" target="_blank" rel="noopener noreferrer">
+              <span class="material-icons">chat</span> Request Dedicated Overwatch
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">SIMPLYES</div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+        <p style="color: var(--text-gray); font-size: 0.9rem;">
+          Berliner Straße 2, Eschborn, Hessen, 65760, Germany<br>
+          <a href="tel:+4917662510556" style="color: var(--accent-gold); text-decoration: none;">+49 17662510556</a>
+        </p>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 SIMPLYES. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    });
+
+    // Handle mobile layout for service cards
+    function adjustLayout() {
+      const cards = document.querySelectorAll('.service-card');
+      if (window.innerWidth <= 768) {
+        cards.forEach(card => {
+          card.style.flexDirection = 'column';
+          card.style.textAlign = 'center';
+        });
+      } else {
+        cards.forEach(card => {
+          card.style.flexDirection = 'row';
+          card.style.textAlign = 'left';
+        });
+      }
+    }
+    
+    window.addEventListener('resize', adjustLayout);
+    adjustLayout(); // run on load
+  </script>
 </body>
 </html>
